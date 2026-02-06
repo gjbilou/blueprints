@@ -8,7 +8,7 @@
       packages = with pkgs; [
         noto-fonts
         noto-fonts-color-emoji
-        nerd-fonts.nerd-fonts.jetbrains-mono
+        nerd-fonts.jetbrains-mono
         nerd-fonts.fira-code
       ];
 
