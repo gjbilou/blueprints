@@ -12,8 +12,8 @@
     environment.systemPackages = with pkgs; [
       mako
       hyprpolkitagent
-      qt5-wayland
-      qt6-wayland
+      qt5.qtwayland
+      qt6.qtwayland
     ];
 
     services.gnome.gnome-keyring.enable = true;
