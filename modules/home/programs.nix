@@ -2,11 +2,10 @@
 {
 
   config = {
-    home = {
       programs = {
         starship = {
-	  enable = true;
-	};
+	      enable = true;
+	    };
 
         fuzzel = { 
           enable = true; 
@@ -39,10 +38,6 @@
         };
 
       };
-  
-    };
-
-
   };
 
 
