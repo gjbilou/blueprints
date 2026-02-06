@@ -34,23 +34,23 @@
   {
 
     nixosConfigurations = {
-      laptop= nixpkgs.lib.nixosSystem {
+      nixy = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 	modules = [ 
-	  ./hosts/laptop
+	  ./hosts/nixy
 
-	  home-manager.nixosModules.home-manager (mkHomeModule "laptop") 
+	  home-manager.nixosModules.home-manager (mkHomeModule "nixy") 
 	];
       };
     };
 
     darwinConfigurations = {
-      macbook = nix-darwin.lib.darwinSystem {
+      maccy = nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
 	modules = [ 
-	  ./hosts/macbook 
+	  ./hosts/maccy
 
-	  home-manager.darwinModules.home-manager (mkHomeModule "macbook") 
+	  home-manager.darwinModules.home-manager (mkHomeModule "maccy") 
 	];
       };
     }; 

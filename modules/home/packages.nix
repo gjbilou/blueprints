@@ -11,8 +11,20 @@
 	discord
 	tree
 	fastfetch
-      ];
 
+        git
+	gnumake
+	unzip
+	gcc
+
+	ripgrep
+	fd
+	wl-clipboard
+	
+	go
+	python315
+	uv
+      ];
 
     };
 
