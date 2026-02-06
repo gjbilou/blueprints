@@ -24,6 +24,7 @@
 	go
 	python315
 	uv
+	lua-language-server
       ];
 
     };
