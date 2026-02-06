@@ -1,8 +1,9 @@
 { ... }:
 {
   imports = [
-    # i need to setup profiles to import here 
-
+    ../../modules/home/packages.nix
+    ../../modules/home/programs.nix
+    ../../modules/home/services.nix
   ];
 
   config = {

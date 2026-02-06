@@ -2,7 +2,7 @@
 {
 
   config = {
-    networking.networkmanger.enable = true;
+    networking.networkmanager.enable = true;
   };
 
 }
