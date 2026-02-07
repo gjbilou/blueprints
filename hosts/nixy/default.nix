@@ -22,13 +22,13 @@
 
       loader = {
         systemd-boot.enable = false;
-	efi.canTouchEfiVariables = true;
+    efi.canTouchEfiVariables = true;
 
-	grub = {
-	  enable = true;
-	  efiSupport = true;
-	  device = "nodev";
-	};
+    grub = {
+      enable = true;
+      efiSupport = true;
+      device = "nodev";
+    };
       };
     };
 

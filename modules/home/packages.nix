@@ -5,7 +5,6 @@
     home = {
       packages = with pkgs; [
     ghostty
-	neovim
 	tldr
 	spotify
 	discord
@@ -25,6 +24,8 @@
 	python315
 	uv
 	lua-language-server
+    tree-sitter
+                nodejs
       ];
 
     };

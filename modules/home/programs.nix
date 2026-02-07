@@ -37,6 +37,16 @@
           enable = true;
         };
 
+        ghostty = {
+          enable = true;
+	  settings = {
+	    font-family = "FiraCode Nerd Font Light";
+	    font-size = 14;
+	    theme = "Catppuccin Mocha";
+	    background-opacity = 0.7;
+	  };
+        };
+
       };
   };
 

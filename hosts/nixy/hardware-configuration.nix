@@ -16,28 +16,28 @@
 
     "/" = { 
         #device = "/dev/disk/by-uuid/12ea94ee-4e11-4739-b5f0-5bb8ced9ea43";
-	device = "/dev/disk/by-label/main";
+    device = "/dev/disk/by-label/main";
         fsType = "btrfs";
         options = [ "subvol=@" "compress=zstd" "noatime" ];
       };
 
     "/home" = { 
         #device = "/dev/disk/by-uuid/12ea94ee-4e11-4739-b5f0-5bb8ced9ea43";
-	device = "/dev/disk/by-label/main";
+    device = "/dev/disk/by-label/main";
         fsType = "btrfs";
         options = [ "subvol=@home" "compress=zstd" "noatime" ];
       };
 
     "/nix" = { 
         #device = "/dev/disk/by-uuid/12ea94ee-4e11-4739-b5f0-5bb8ced9ea43";
-	device = "/dev/disk/by-label/main";
+    device = "/dev/disk/by-label/main";
         fsType = "btrfs";
         options = [ "subvol=@nix" "compress=zstd" "noatime" ];
       };
 
     "/boot" = { 
         #device = "/dev/disk/by-uuid/12CE-A600";
-	device = "/dev/disk/by-label/BOOT";
+    device = "/dev/disk/by-label/BOOT";
         fsType = "vfat";
         options = [ "fmask=0077" "dmask=0077" ];
       };
