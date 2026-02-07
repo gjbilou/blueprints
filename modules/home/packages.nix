@@ -4,7 +4,7 @@
   config = {
     home = {
       packages = with pkgs; [
-        wezterm
+    ghostty
 	neovim
 	tldr
 	spotify
