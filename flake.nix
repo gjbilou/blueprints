@@ -16,17 +16,25 @@
       url = "github:nix-darwin/nix-darwin/nix-darwin-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixvim = {
+      url = "github:nix-community/nixvim/nixos-25.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, nix-darwin, ... }: 
+  outputs = inputs@{ self, nixpkgs, home-manager, nix-darwin, nixvim, ... }: 
   let
 
     mkHomeModule = host: {
       home-manager = {
         useGlobalPkgs = true;
         useUserPackages = true;
-        users.rain.imports = [ ./hosts/${host}/home.nix ];
+        users.rain.imports = [ 
+	  ./hosts/${host}/home.nix 
+
+	  nixvim.homeModules.nixvim
+	];
       };
     };
 
